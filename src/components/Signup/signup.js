@@ -7,13 +7,7 @@ import {
   createUserWithEmailAndPassword,
   updateProfile,
 } from "firebase/auth";
-import {
-  getFirestore,
-  doc,
-  setDoc,
-  collection,
-  addDoc,
-} from "firebase/firestore";
+import { getFirestore, doc, setDoc, collection } from "firebase/firestore";
 import firebaseApp from "../../firebaseConfig";
 
 const Signup = () => {

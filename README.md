@@ -17,7 +17,7 @@ Displays a welcome message and user details, including name and email. It also h
 ### UsersList
 Displays currently present users in a tabular format. Usernames and their ages are shown. Users can be sorted based on alphabetical order of names or ages by clicking "Filter by Name" and "Filter by Age" buttons.
 
-# ----  ----
+
 
 # Getting Started with Create React App
 

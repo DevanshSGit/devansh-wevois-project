@@ -68,7 +68,7 @@ const Signup = () => {
         .required("Required"),
       email: Yup.string().email("Invalid email").required("Required"),
       password: Yup.string()
-        .min(6, "Password must be at least 6 characters")
+        .min(6, "Password must be at least 6 characters long")
         .required("Required"),
     });
 
@@ -153,9 +153,6 @@ const Signup = () => {
             onBlur={handleBlur}
             className={styles.inputField}
           />
-          {isFormSubmitted && errors.username && (
-            <div className={styles.errorMessage}>{errors.username}</div>
-          )}
 
           <input
             type="text"
@@ -166,9 +163,6 @@ const Signup = () => {
             onBlur={handleBlur}
             className={styles.inputField}
           />
-          {isFormSubmitted && errors.age && (
-            <div className={styles.errorMessage}>Invalid age</div>
-          )}
 
           <input
             type="email"
@@ -179,9 +173,6 @@ const Signup = () => {
             onBlur={handleBlur}
             className={styles.inputField}
           />
-          {isFormSubmitted && errors.email && (
-            <div className={styles.errorMessage}>{errors.email}</div>
-          )}
 
           <input
             type="password"
@@ -192,16 +183,19 @@ const Signup = () => {
             onBlur={handleBlur}
             className={styles.inputField}
           />
-          {isFormSubmitted && errors.password && (
-            <div className={styles.errorMessage}>{errors.password}</div>
-          )}
 
           <button type="submit" className={styles.signupButton}>
             Sign Up
           </button>
         </form>
         {isFormSubmitted && Object.values(errors).some((error) => error) && (
-          <div className={styles.errorMessage}>All fields are mandatory</div>
+          <div className={styles.errorMessage}>
+            All fields are mandatory <br />
+            Username can only include letters <br />
+            Age must be a whole number <br />
+            Password must be a minimum of 6 characters <br />
+            Email must be in a valid format (e.g., test@test.com)
+          </div>
         )}
       </div>
     </div>

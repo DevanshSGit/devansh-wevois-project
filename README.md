@@ -7,6 +7,8 @@ The Signup component is the first component displayed when the app is loaded in 
 ### Signup
 When a user signs up with valid credentials, they are redirected to the Login page.
 
+![Signup](images/Signup.png)
+
 ### Login
 After providing correct email and password, users are redirected to the Home page.
 

@@ -1,3 +1,24 @@
+# Firebase Authenticatioin in React App
+
+This is a React application that uses Firebase Authentication to allow users to sign up, log in, and navigate through different components. The app includes four components: Home, Login, Signup and UsersList.
+The Signup component is the first component displayed when the app is loaded in the browser. React-Router is used to facilitate navigation between these components.
+
+## Authentication Flow
+### Signup
+When a user signs up with valid credentials, they are redirected to the Login page.
+
+### Login
+After providing correct email and password, users are redirected to the Home page.
+
+## Application Components
+### Home
+Displays a welcome message and user details, including name and email. It also has a "See all Users" option that redirects users to the UsersList page component.
+
+### UsersList
+Displays currently present users in a tabular format. Usernames and their ages are shown. Users can be sorted based on alphabetical order of names or ages by clicking "Filter by Name" and "Filter by Age" buttons.
+
+# ----  ----
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

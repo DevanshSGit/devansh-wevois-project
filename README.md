@@ -3,7 +3,7 @@
 This is a React application that uses Firebase Authentication to allow users to sign up, log in, and navigate through different components. The app includes four components: Home, Login, Signup and UsersList.
 The Signup component is the first component displayed when the app is loaded in the browser. React-Router is used to facilitate navigation between these components.
 
-## Authentication Flow
+## Authentication Components
 ### Signup
 When a user signs up with valid credentials, they are redirected to the Login page.
 

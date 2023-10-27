@@ -33,6 +33,8 @@ const Signup = () => {
 
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
 
+  const [signupError, setSignupError] = useState(null);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -123,6 +125,7 @@ const Signup = () => {
       // to reset the form and clear validation errors
       setFormData(initialFormData);
       setErrors(initialErrors);
+      setSignupError(null);
 
       navigate("/login");
 
@@ -132,6 +135,13 @@ const Signup = () => {
       console.error("");
     } catch (error) {
       console.error("Error creating user:", error.message);
+      if (error.code === "auth/email-already-in-use") {
+        setSignupError("Account already exists with this email.");
+      } else {
+        setSignupError(
+          "An error occurred during signup. Please try again later."
+        );
+      }
     }
   };
 
@@ -188,6 +198,11 @@ const Signup = () => {
             Sign Up
           </button>
         </form>
+
+        {signupError && !Object.values(errors).some((error) => error) && (
+          <div className={styles.errorMessage}>{signupError}</div>
+        )}
+
         {isFormSubmitted && Object.values(errors).some((error) => error) && (
           <div className={styles.errorMessage}>
             All fields are mandatory <br />

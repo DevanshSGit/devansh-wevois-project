@@ -13,13 +13,20 @@ When a user signs up with valid credentials, they are redirected to the Login pa
 ### Login
 After providing correct email and password, users are redirected to the Home page.
 
+![Login](https://github.com/DevanshSGit/devansh-wevois-project/assets/65933707/53f488ba-a181-4120-a45b-db752053a285)
+
+
 ## Application Components
 ### Home
 Displays a welcome message and user details, including name and email. It also has a "See all Users" option that redirects users to the UsersList page component.
 
+![Home](https://github.com/DevanshSGit/devansh-wevois-project/assets/65933707/0ea206c8-65c1-4471-86b9-21abb06b07d3)
+
+
 ### UsersList
 Displays currently present users in a tabular format. Usernames and their ages are shown. Users can be sorted based on alphabetical order of names or ages by clicking "Filter by Name" and "Filter by Age" buttons.
 
+![UsersList](https://github.com/DevanshSGit/devansh-wevois-project/assets/65933707/14bcd02a-9c10-4735-b3c5-7d07d65fd7a7)
 
 
 # Getting Started with Create React App

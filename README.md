@@ -7,7 +7,8 @@ The Signup component is the first component displayed when the app is loaded in 
 ### Signup
 When a user signs up with valid credentials, they are redirected to the Login page.
 
-![Signup](images/Signup.png)
+![Signup](https://github.com/DevanshSGit/devansh-wevois-project/assets/65933707/47e7bf52-1452-4293-8ff9-a8ffc69c8cba)
+
 
 ### Login
 After providing correct email and password, users are redirected to the Home page.

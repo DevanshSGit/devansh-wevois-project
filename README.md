@@ -13,7 +13,8 @@ When a user signs up with valid credentials, they are redirected to the Login pa
 ### Login
 After providing correct email and password, users are redirected to the Home page.
 
-![Login](https://github.com/DevanshSGit/devansh-wevois-project/assets/65933707/53f488ba-a181-4120-a45b-db752053a285)
+![Login](https://github.com/DevanshSGit/devansh-wevois-project/assets/65933707/66d681d4-bdda-4d32-89eb-f4e642217033)
+
 
 
 ## Application Components
